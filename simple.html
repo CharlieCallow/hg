@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hillgate — Compliance-first payments for the digital-asset market</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hillgate Finance B.V. — a Dutch EMI providing banking, 24/7 FX, and instant settlement for regulated institutions in digital assets.">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .hero-simple .hero-inner { grid-template-columns: 1fr; padding: 120px 32px 88px; }
+  .hero-simple h1 { max-width: 820px; }
+  .hero-simple .hero-lede { max-width: 640px; }
+  .product-simple { gap: 14px; }
+  .contact-simple .contact-inner { grid-template-columns: 1fr 480px; gap: 56px; }
+  @media (max-width: 1024px) {
+    .contact-simple .contact-inner { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand" data-scroll="top">Hillgate<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="#products" data-scroll="products">Products</a>
+      <a href="#compliance" data-scroll="compliance">Compliance</a>
+      <a href="#contact" data-scroll="contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="#contact" class="hg-btn" data-scroll="contact">Contact sales</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero hero-simple" id="top">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-pill">
+        <span class="dot"></span>
+        <span>Compliance-first payments infrastructure</span>
+      </div>
+      <h1>Institutional banking, FX, and settlement for <span class="accent">the digital-asset market.</span></h1>
+      <p class="hero-lede">A Dutch EMI providing named bank accounts, 24/7 FX, and an internal settlement network to regulated institutions operating in digital assets.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="hg-btn lg" data-scroll="contact">Request onboarding</a>
+        <a href="#products" class="hg-btn secondary lg" data-scroll="products">See what we do →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="products-inner">
+    <div class="section-header">
+      <div>
+        <div class="eyebrow">Core products</div>
+        <h2>Three services, one compliance regime.</h2>
+      </div>
+    </div>
+    <div class="products-grid">
+      <div class="product product-simple">
+        <div class="product-num">01</div>
+        <div class="product-name">Third-Party Payments</div>
+        <p class="product-blurb">Send and receive fiat across USD, EUR, GBP, and SGD via named client bank accounts on real-time rails and SWIFT.</p>
+      </div>
+      <div class="product product-simple">
+        <div class="product-num">02</div>
+        <div class="product-name">FX Trading</div>
+        <p class="product-blurb">Institutional-grade conversion on a 60+ bank panel, with a 24/5 manned desk and 24/7 live APIs.</p>
+      </div>
+      <div class="product product-simple">
+        <div class="product-num">03</div>
+        <div class="product-name">Instant Settlement Network</div>
+        <p class="product-blurb">A 24/7/365 internal ledger for fee-free, atomic transfers between Hillgate clients — no rails, no cut-offs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="compliance" id="compliance">
+  <div class="compliance-inner">
+    <div class="compliance-eyebrow">Compliance-first framework</div>
+    <h2>A counterparty you can put on your risk register.</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="num">01</div>
+        <h3>Institutional only</h3>
+        <p>No retail. Onboarding is restricted to regulated fund managers, market makers, CASPs, and interdealer brokers.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">02</div>
+        <h3>Three lines of defence</h3>
+        <p>Business, Compliance &amp; Risk, and an independent Internal Audit reporting to the non-executive board.</p>
+      </div>
+      <div class="pillar">
+        <div class="num">03</div>
+        <h3>Safeguarded funds</h3>
+        <p>Client funds held in named Safeguarding Accounts and segregated via a Stichting under Wft art. 3:29a.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact contact-simple" id="contact">
+  <div class="contact-inner">
+    <div class="contact-intro">
+      <div class="eyebrow">Request onboarding</div>
+      <h2>If you're a regulated institution, we'd like to meet.</h2>
+      <p>Expect an initial call within two business days. For general queries, reach us at <strong>sales@hillgate.finance</strong>.</p>
+    </div>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="heading">Counterparty enquiry</div>
+      <div class="form-grid">
+        <div class="field">
+          <label for="f-name">Full name</label>
+          <input id="f-name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Work email</label>
+          <input id="f-email" name="email" type="email" required>
+        </div>
+      </div>
+      <div class="form-grid">
+        <div class="field" style="grid-column: 1 / -1;">
+          <label for="f-entity">Legal entity</label>
+          <input id="f-entity" name="entity" required>
+        </div>
+      </div>
+      <div class="notes">
+        <label for="f-notes">Notes</label>
+        <textarea id="f-notes" name="notes" rows="3" placeholder="Tell us a little about what you're looking for."></textarea>
+      </div>
+      <div class="form-foot">
+        <div class="notice">Sensitive due-diligence material will only be requested over secure channel.</div>
+        <button type="submit" class="hg-btn lg" id="submit-btn">Submit enquiry →</button>
+      </div>
+    </form>
+
+    <div class="contact-done hidden" id="contact-done">
+      <div class="chip"><span class="dot"></span>Enquiry received</div>
+      <h3>Thank you, <span id="done-name">there</span>.</h3>
+      <p>We've logged your enquiry for <strong id="done-entity"></strong>. Our onboarding team will be in touch at <strong id="done-email"></strong> within two business days.</p>
+      <div class="ref">Reference <code id="done-ref"></code> · Received <span id="done-date"></span></div>
+      <button type="button" class="hg-btn secondary" id="reset-btn">Submit another enquiry</button>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom" style="padding-top: 0; border-top: 0;">
+      <div>© 2026 Hillgate Finance B.V.</div>
+      <nav>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
